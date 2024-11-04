@@ -1,9 +1,11 @@
-body {
+body, h1, h2, p {
   font-family: Arial, sans-serif;
+  color: #333;
   margin: 0;
   padding: 0;
   background-color: #25a014;
 }
+
 
 header {
     background-image: url("banner.jpg");
@@ -75,13 +77,13 @@ button:hover {
   background-color: white;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 5px solid #25a014;
   width: 30%;
   text-align: left;
 }
 
 .close {
-  color: #25a014;
+  color: black;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -89,24 +91,64 @@ button:hover {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    align-items: center;
-  }
-  
-  .text {
-    padding-right: 20px;
-    color: white;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
   
   .image img {
     max-width: 100%;
     height: auto;
   }
+  
+
+  .text, .image {
+    padding-right: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  button, nav ul li a {
+    background-color: #25a014;
+    color: white;
+    text-decoration: none;
+  }
+  
+  button:hover, nav ul li a:hover {
+    background-color: #3be02c;
+  }
+
+  h1 {
+    font-size: 2em;
+    color: #0c330e;
+  }
+  button {
+    background-color: #25a014;
+    font-weight: bold;
+  }
+
+  header {
+    background-image: url("banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .modal-content {
+    background-color: white;
+    border: 2px solid #25a014;
+  }
+  
+  
+  
   

@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-info {
+  margin-left: 20px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile-info p {
+  margin: 5px 0 0;
+  color: #888;
+}
+
+.post-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.new-post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+/* Custom 'Choose Image or Video to Upload' Button */
+.upload-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.upload-btn:hover {
+  background-color: #45a049;
+}
+
+/* Hide the default file input */
+input[type="file"] {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.post {
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;  /* Added to provide context for absolutely positioned elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.post img, .post video {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.post p {
+  margin-bottom: 10px;
+  padding-right: 40px;  /* Add some space to the right for the delete button */
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;  /* Align the delete button to the right of the post */
+  margin-top: -10px;  /* Adjust the top margin if needed to bring it closer to the content */
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+#fileNameDisplay{
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
